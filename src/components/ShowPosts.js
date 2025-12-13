@@ -6,7 +6,6 @@ import moment from 'moment';
 import { useSelector } from "react-redux";
 import { useEffect, useState } from "react";
 import axios from "axios";
-import { API_URL } from "../config";
 
 export default function ShowPosts() {
     const userProfilePic = useSelector((state) => state.user.user.userProfilePic);
@@ -38,7 +37,7 @@ export default function ShowPosts() {
 
     const showAllPosts = async () => {
         try {
-            const myData = await axios.get(`${API_URL}/showPosts`);
+            const myData = await axios.get("https://smart-estate-server.onrender.com/showPosts");
             setPosts(myData.data);
             console.log(myData.data);
         } catch (err) {
@@ -62,7 +61,10 @@ export default function ShowPosts() {
                                 <p>{post.postMessage}</p>
                             </Col>
                             <Col>
-                                <iframe src={`https://maps.google.com/maps?q=${myPost.lat},${myPost.lon}&output=embed`} style={{ border: "0", height: "180px", width: "360px" }} ></iframe>
+                                <iframe
+                                    src={`https://maps.google.com/maps?q=${myPost.lat},${myPost.lon}&output=embed`}
+                                    style={{ border: "0", height: "180px", width: "360px" }}
+                                ></iframe>
                             </Col>
                         </Row>
                     </CardBody>
