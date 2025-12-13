@@ -1,6 +1,5 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 import axios from "axios";
-import API_URL from "../config";
 
 // Async thunk for login
 export const loginUser = createAsyncThunk(
@@ -8,7 +7,7 @@ export const loginUser = createAsyncThunk(
   async (credentials, { rejectWithValue }) => {
     try {
       const response = await axios.post(
-        `${API_URL}/userLogin`,
+        `https://smart-estate-server.onrender.com/userLogin`,
         credentials
       );
 
@@ -18,9 +17,7 @@ export const loginUser = createAsyncThunk(
 
       return response.data.user;
     } catch (error) {
-      return rejectWithValue(
-        error.response?.data || "Login failed"
-      );
+      return rejectWithValue(error.response?.data || "Login failed");
     }
   }
 );
@@ -31,7 +28,7 @@ export const registerUser = createAsyncThunk(
   async (userData, { rejectWithValue }) => {
     try {
       const response = await axios.post(
-        `${API_URL}/userRegister`,
+        `https://smart-estate-server.onrender.com/userRegister`,
         userData
       );
 
@@ -41,9 +38,7 @@ export const registerUser = createAsyncThunk(
 
       return response.data;
     } catch (error) {
-      return rejectWithValue(
-        error.response?.data || "Registration failed"
-      );
+      return rejectWithValue(error.response?.data || "Registration failed");
     }
   }
 );
@@ -51,7 +46,7 @@ export const registerUser = createAsyncThunk(
 const initialState = {
   user: null,
   isAuthenticated: false,
-  status: "idle", // idle | loading | succeeded | failed
+  status: "idle",
   error: null,
   registerStatus: "idle",
   registerError: null,
@@ -74,7 +69,6 @@ const userSlice = createSlice({
   },
   extraReducers: (builder) => {
     builder
-      // Login
       .addCase(loginUser.pending, (state) => {
         state.status = "loading";
         state.error = null;
@@ -89,8 +83,6 @@ const userSlice = createSlice({
         state.error = action.payload;
         state.isAuthenticated = false;
       })
-
-      // Register
       .addCase(registerUser.pending, (state) => {
         state.registerStatus = "loading";
         state.registerError = null;
