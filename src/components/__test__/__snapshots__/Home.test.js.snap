@@ -1,0 +1,164 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Home Component matches snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="bg-dark text-white"
+    style="min-height: 100vh;"
+  >
+    <div>
+      <nav
+        class="shadow-sm py-3 navbar navbar-expand-md navbar-light bg-light"
+      >
+        <div
+          class="container-fluid"
+        >
+          <div
+            class="container"
+          >
+            <a
+              class="d-flex align-items-center fw-bold navbar-brand"
+              href="/"
+            >
+              <svg
+                class="me-2"
+                fill="currentColor"
+                height="24"
+                stroke="currentColor"
+                stroke-width="0"
+                viewBox="0 0 448 512"
+                width="24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M436 480h-20V24c0-13.255-10.745-24-24-24H56C42.745 0 32 10.745 32 24v456H12c-6.627 0-12 5.373-12 12v20h448v-20c0-6.627-5.373-12-12-12zM128 76c0-6.627 5.373-12 12-12h40c6.627 0 12 5.373 12 12v40c0 6.627-5.373 12-12 12h-40c-6.627 0-12-5.373-12-12V76zm0 96c0-6.627 5.373-12 12-12h40c6.627 0 12 5.373 12 12v40c0 6.627-5.373 12-12 12h-40c-6.627 0-12-5.373-12-12v-40zm52 148h-40c-6.627 0-12-5.373-12-12v-40c0-6.627 5.373-12 12-12h40c6.627 0 12 5.373 12 12v40c0 6.627-5.373 12-12 12zm76 160h-64v-84c0-6.627 5.373-12 12-12h40c6.627 0 12 5.373 12 12v84zm64-172c0 6.627-5.373 12-12 12h-40c-6.627 0-12-5.373-12-12v-40c0-6.627 5.373-12 12-12h40c6.627 0 12 5.373 12 12v40zm0-96c0 6.627-5.373 12-12 12h-40c-6.627 0-12-5.373-12-12v-40c0-6.627 5.373-12 12-12h40c6.627 0 12 5.373 12 12v40zm0-96c0 6.627-5.373 12-12 12h-40c-6.627 0-12-5.373-12-12V76c0-6.627 5.373-12 12-12h40c6.627 0 12 5.373 12 12v40z"
+                />
+              </svg>
+               SmartEstate
+            </a>
+            <button
+              aria-label="Toggle navigation"
+              class="navbar-toggler"
+              type="button"
+            >
+              <span
+                class="navbar-toggler-icon"
+              />
+            </button>
+            <div
+              class="collapse navbar-collapse"
+            >
+              <ul
+                class="me-auto navbar-nav"
+              >
+                <li
+                  class="nav-item"
+                >
+                  <a
+                    class="nav-link"
+                    href="/"
+                  >
+                    Home
+                  </a>
+                </li>
+                <li
+                  class="nav-item"
+                >
+                  <a
+                    class="nav-link"
+                    href="/properties"
+                  >
+                    Properties
+                  </a>
+                </li>
+              </ul>
+              <form
+                class="d-flex mx-auto w-50"
+                role="search"
+              >
+                <input
+                  class="me-2 rounded-pill form-control"
+                  placeholder="Search by city, type..."
+                  type="search"
+                  value=""
+                />
+              </form>
+              <ul
+                class="navbar-nav"
+              >
+                <li
+                  class="nav-item"
+                >
+                  <a
+                    class="nav-link"
+                    href="/login"
+                  >
+                    Login
+                  </a>
+                </li>
+                <li
+                  class="nav-item"
+                >
+                  <a
+                    class="ms-2 btn btn-dark"
+                    href="/register"
+                  >
+                    Sign Up
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <div
+      class="d-flex flex-column justify-content-center align-items-center text-center container"
+      style="height: 80vh;"
+    >
+      <h1
+        class="display-4 fw-bold mb-3"
+      >
+        Find Your Perfect Rental Home
+      </h1>
+      <p
+        class="lead mb-5 text-light opacity-75"
+      >
+        Discover thousands of properties for rent. Easy, fast, and secure rental experience.
+      </p>
+      <div
+        class="bg-white p-2 rounded-4 d-flex w-75 shadow-lg"
+      >
+        <input
+          class="border-0 shadow-none form-control-lg form-control"
+          placeholder="Search by city, neighborhood, or property type..."
+          type="text"
+          value=""
+        />
+        <button
+          class="rounded-4 px-4 fw-bold btn btn-dark"
+          type="button"
+        >
+          Search
+        </button>
+      </div>
+      <div
+        class="mt-5 d-flex gap-3"
+      >
+        <button
+          class="px-5 border border-secondary btn btn-dark btn-lg"
+          type="button"
+        >
+          View Properties
+        </button>
+        <button
+          class="px-5 text-dark fw-bold btn btn-light btn-lg"
+          type="button"
+        >
+          List Your Property
+        </button>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;

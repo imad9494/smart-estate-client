@@ -1,0 +1,123 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PropertyCard Component matches snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="shadow-sm border-0 h-100 rounded-4 overflow-hidden card"
+  >
+    <div
+      class="position-relative"
+    >
+      <img
+        alt="Modern Villa"
+        class="card-img-top"
+        src="https://example.com/villa.jpg"
+        style="height: 250px; object-fit: cover;"
+        width="100%"
+      />
+      <span
+        class="position-absolute top-0 end-0 m-3 p-2 badge bg-dark"
+      >
+        House
+      </span>
+    </div>
+    <div
+      class="p-4 card-body"
+    >
+      <div
+        class="d-flex justify-content-between align-items-start mb-2"
+      >
+        <div>
+          <h5
+            class="fw-bold mb-1 card-title"
+          >
+            Modern Villa
+          </h5>
+          <div
+            class="mb-2 text-muted small card-subtitle"
+          >
+            456 Beach Rd, Gold Coast
+          </div>
+        </div>
+        <h5
+          class="fw-bold text-primary"
+        >
+          $2500
+          <span
+            class="text-muted small fw-normal"
+          >
+            /mo
+          </span>
+        </h5>
+      </div>
+      <div
+        class="d-flex justify-content-between text-muted my-3 small border-top border-bottom py-2"
+      >
+        <span
+          class="d-flex align-items-center"
+        >
+          <svg
+            class="me-1"
+            fill="currentColor"
+            height="1em"
+            stroke="currentColor"
+            stroke-width="0"
+            viewBox="0 0 640 512"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M176 256c44.11 0 80-35.89 80-80s-35.89-80-80-80-80 35.89-80 80 35.89 80 80 80zm352-128H304c-8.84 0-16 7.16-16 16v144H64V80c0-8.84-7.16-16-16-16H16C7.16 64 0 71.16 0 80v352c0 8.84 7.16 16 16 16h32c8.84 0 16-7.16 16-16v-48h512v48c0 8.84 7.16 16 16 16h32c8.84 0 16-7.16 16-16V240c0-61.86-50.14-112-112-112z"
+            />
+          </svg>
+           4 Bed
+        </span>
+        <span
+          class="d-flex align-items-center"
+        >
+          <svg
+            class="me-1"
+            fill="currentColor"
+            height="1em"
+            stroke="currentColor"
+            stroke-width="0"
+            viewBox="0 0 512 512"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M32,384a95.4,95.4,0,0,0,32,71.09V496a16,16,0,0,0,16,16h32a16,16,0,0,0,16-16V480H384v16a16,16,0,0,0,16,16h32a16,16,0,0,0,16-16V455.09A95.4,95.4,0,0,0,480,384V336H32ZM496,256H80V69.25a21.26,21.26,0,0,1,36.28-15l19.27,19.26c-13.13,29.88-7.61,59.11,8.62,79.73l-.17.17A16,16,0,0,0,144,176l11.31,11.31a16,16,0,0,0,22.63,0L283.31,81.94a16,16,0,0,0,0-22.63L272,48a16,16,0,0,0-22.62,0l-.17.17c-20.62-16.23-49.83-21.75-79.73-8.62L150.22,20.28A69.25,69.25,0,0,0,32,69.25V256H16A16,16,0,0,0,0,272v16a16,16,0,0,0,16,16H496a16,16,0,0,0,16-16V272A16,16,0,0,0,496,256Z"
+            />
+          </svg>
+           3 Bath
+        </span>
+        <span
+          class="d-flex align-items-center"
+        >
+          <svg
+            class="me-1"
+            fill="currentColor"
+            height="1em"
+            stroke="currentColor"
+            stroke-width="0"
+            viewBox="0 0 512 512"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M160 288h-56c-4.42 0-8-3.58-8-8v-16c0-4.42 3.58-8 8-8h56v-64h-56c-4.42 0-8-3.58-8-8v-16c0-4.42 3.58-8 8-8h56V96h-56c-4.42 0-8-3.58-8-8V72c0-4.42 3.58-8 8-8h56V32c0-17.67-14.33-32-32-32H32C14.33 0 0 14.33 0 32v448c0 2.77.91 5.24 1.57 7.8L160 329.38V288zm320 64h-32v56c0 4.42-3.58 8-8 8h-16c-4.42 0-8-3.58-8-8v-56h-64v56c0 4.42-3.58 8-8 8h-16c-4.42 0-8-3.58-8-8v-56h-64v56c0 4.42-3.58 8-8 8h-16c-4.42 0-8-3.58-8-8v-56h-41.37L24.2 510.43c2.56.66 5.04 1.57 7.8 1.57h448c17.67 0 32-14.33 32-32v-96c0-17.67-14.33-32-32-32z"
+            />
+          </svg>
+           3000 sqft
+        </span>
+      </div>
+      <button
+        class="w-100 rounded-3 btn btn-outline-dark d-block w-100"
+        type="button"
+      >
+        View Details
+      </button>
+    </div>
+  </div>
+</DocumentFragment>
+`;

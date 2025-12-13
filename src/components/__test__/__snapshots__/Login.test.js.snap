@@ -1,0 +1,120 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Login Component matches snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="d-flex justify-content-center align-items-center vh-100 bg-light-subtle container"
+  >
+    <div
+      class="w-100 justify-content-center row"
+    >
+      <div
+        class="col-md-6 col-lg-5"
+      >
+        <div
+          class="text-center mb-4"
+        >
+          <svg
+            class="mb-2"
+            fill="currentColor"
+            height="40"
+            stroke="currentColor"
+            stroke-width="0"
+            viewBox="0 0 448 512"
+            width="40"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M436 480h-20V24c0-13.255-10.745-24-24-24H56C42.745 0 32 10.745 32 24v456H12c-6.627 0-12 5.373-12 12v20h448v-20c0-6.627-5.373-12-12-12zM128 76c0-6.627 5.373-12 12-12h40c6.627 0 12 5.373 12 12v40c0 6.627-5.373 12-12 12h-40c-6.627 0-12-5.373-12-12V76zm0 96c0-6.627 5.373-12 12-12h40c6.627 0 12 5.373 12 12v40c0 6.627-5.373 12-12 12h-40c-6.627 0-12-5.373-12-12v-40zm52 148h-40c-6.627 0-12-5.373-12-12v-40c0-6.627 5.373-12 12-12h40c6.627 0 12 5.373 12 12v40c0 6.627-5.373 12-12 12zm76 160h-64v-84c0-6.627 5.373-12 12-12h40c6.627 0 12 5.373 12 12v84zm64-172c0 6.627-5.373 12-12 12h-40c-6.627 0-12-5.373-12-12v-40c0-6.627 5.373-12 12-12h40c6.627 0 12 5.373 12 12v40zm0-96c0 6.627-5.373 12-12 12h-40c-6.627 0-12-5.373-12-12v-40c0-6.627 5.373-12 12-12h40c6.627 0 12 5.373 12 12v40zm0-96c0 6.627-5.373 12-12 12h-40c-6.627 0-12-5.373-12-12V76c0-6.627 5.373-12 12-12h40c6.627 0 12 5.373 12 12v40z"
+            />
+          </svg>
+          <h3>
+            SmartEstate
+          </h3>
+        </div>
+        <div
+          class="shadow border-0 rounded-4 card"
+        >
+          <div
+            class="card-header bg-transparent border-0 text-center pt-4 pb-0"
+          >
+            <div
+              class="btn-group w-50"
+              role="group"
+            >
+              <button
+                class="fw-bold active border-bottom border-dark rounded-0 btn btn-white"
+              >
+                Login
+              </button>
+              <a
+                class="text-muted border-0 rounded-0 btn btn-light"
+                href="/register"
+              >
+                Sign Up
+              </a>
+            </div>
+          </div>
+          <div
+            class="p-5 card-body"
+          >
+            <h4
+              class="card-title fw-bold mb-1"
+            >
+              Welcome Back
+            </h4>
+            <p
+              class="text-muted mb-4"
+            >
+              Enter your credentials to access your account
+            </p>
+            <form
+              class=""
+            >
+              <div
+                class="mb-3 mb-3"
+              >
+                <label
+                  class="fw-bold small form-label"
+                >
+                  Email
+                </label>
+                <input
+                  class="bg-light border-0 py-2 form-control"
+                  data-testid="x"
+                  placeholder="john@example.com"
+                  required=""
+                  type="email"
+                  value=""
+                />
+              </div>
+              <div
+                class="mb-4 mb-3"
+              >
+                <label
+                  class="fw-bold small form-label"
+                >
+                  Password
+                </label>
+                <input
+                  class="bg-light border-0 py-2 form-control"
+                  placeholder="........"
+                  required=""
+                  type="password"
+                  value=""
+                />
+              </div>
+              <button
+                class="w-100 py-2 fw-bold btn btn-dark d-block w-100"
+                type="submit"
+              >
+                Login
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
