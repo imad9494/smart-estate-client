@@ -1,14 +1,13 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 import axios from "axios";
-import { API_URL } from "../config";
-
-
 
 export const fetchProperties = createAsyncThunk(
     "properties/fetchProperties",
     async (search = "", { rejectWithValue }) => {
         try {
-            const response = await axios.get(`${API_URL}/getProperties?search=${search}`);
+            const response = await axios.get(
+                `https://smart-estate-server.onrender.com/getProperties?search=${search}`
+            );
             return response.data;
         } catch (error) {
             return rejectWithValue(error.response?.data || "Fetch failed");
@@ -20,7 +19,10 @@ export const addProperty = createAsyncThunk(
     "properties/addProperty",
     async (propertyData, { rejectWithValue }) => {
         try {
-            const response = await axios.post(`${API_URL}/addProperty`, propertyData);
+            const response = await axios.post(
+                `https://smart-estate-server.onrender.com/addProperty`,
+                propertyData
+            );
             return response.data.property;
         } catch (error) {
             return rejectWithValue(error.response?.data || "Add property failed");
@@ -32,7 +34,9 @@ export const fetchMyProperties = createAsyncThunk(
     "properties/fetchMyProperties",
     async (email, { rejectWithValue }) => {
         try {
-            const response = await axios.get(`${API_URL}/getMyProperties/${email}`);
+            const response = await axios.get(
+                `https://smart-estate-server.onrender.com/getMyProperties/${email}`
+            );
             return response.data;
         } catch (error) {
             return rejectWithValue(error.response?.data);
@@ -44,7 +48,10 @@ export const updateProperty = createAsyncThunk(
     "properties/updateProperty",
     async ({ id, propertyData }, { rejectWithValue }) => {
         try {
-            const response = await axios.put(`${API_URL}/updateProperty/${id}`, propertyData);
+            const response = await axios.put(
+                `https://smart-estate-server.onrender.com/updateProperty/${id}`,
+                propertyData
+            );
             return response.data.property;
         } catch (error) {
             return rejectWithValue(error.response?.data || "Update failed");
@@ -56,7 +63,9 @@ export const deleteProperty = createAsyncThunk(
     "properties/deleteProperty",
     async (id, { rejectWithValue }) => {
         try {
-            await axios.delete(`${API_URL}/deleteProperty/${id}`);
+            await axios.delete(
+                `https://smart-estate-server.onrender.com/deleteProperty/${id}`
+            );
             return id;
         } catch (error) {
             return rejectWithValue(error.response?.data || "Delete failed");
@@ -87,19 +96,19 @@ const propertySlice = createSlice({
                 state.error = action.payload;
             })
             .addCase(addProperty.fulfilled, (state, action) => {
-                state.list.unshift(action.payload); // Add new property to top
+                state.list.unshift(action.payload);
             })
             .addCase(fetchMyProperties.fulfilled, (state, action) => {
                 state.myList = action.payload;
             })
             .addCase(updateProperty.fulfilled, (state, action) => {
-                const index = state.list.findIndex(p => p._id === action.payload._id);
+                const index = state.list.findIndex((p) => p._id === action.payload._id);
                 if (index !== -1) {
                     state.list[index] = action.payload;
                 }
             })
             .addCase(deleteProperty.fulfilled, (state, action) => {
-                state.list = state.list.filter(p => p._id !== action.payload);
+                state.list = state.list.filter((p) => p._id !== action.payload);
             });
     },
 });
