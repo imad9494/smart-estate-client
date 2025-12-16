@@ -3,10 +3,7 @@ import '@testing-library/jest-dom';
 import { BrowserRouter } from 'react-router-dom';
 import PropertyCard from '../PropertyCard';
 
-// PropertyCard doesn't seem to use Redux directly (based on previous view), only props and Router. 
-// If it used dispatch in a click handler, we might need Provider, but just rendering props usually doesn't.
-// However, the prompt general rules said "Wrap components with Provider using redux-mock-store". 
-// I will wrap it to be safe and consistent.
+
 
 import { Provider } from 'react-redux';
 import configureStore from 'redux-mock-store';
@@ -54,3 +51,4 @@ describe('PropertyCard Component', () => {
         expect(screen.getByText(/\$2500/i)).toBeInTheDocument();
     });
 });
+
