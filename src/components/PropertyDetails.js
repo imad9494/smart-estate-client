@@ -23,12 +23,7 @@ const PropertyDetails = () => {
 
     useEffect(() => {
         if (!property) {
-            // Fallback fetch if not in store (e.g. direct link access)
-            // Using simple fetch for now as I didn't create a specific thunk for getPropertyById
-            // But existing getProperties returns all, so maybe just dispatch that?
-            // Or better, just fetch it directly here.
-
-            // Quick fix: Fetch all properties if empty list
+            
             setLoading(false); // Placeholder as we rely on list being populated usually
         }
     }, [property]);
@@ -189,4 +184,5 @@ const PropertyDetails = () => {
 };
 
 export default PropertyDetails;
+
 
