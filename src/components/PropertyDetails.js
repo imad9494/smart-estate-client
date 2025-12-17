@@ -5,7 +5,7 @@ import { Container, Row, Col, Button, Badge, Card, CardBody, Spinner } from 'rea
 import Header from './Header';
 import { deleteProperty } from '../slices/propertySlice';
 import { FaMapMarkerAlt, FaBed, FaBath, FaRulerCombined, FaCheck, FaArrowLeft, FaEdit, FaTrash } from 'react-icons/fa';
-import axios from 'axios'; // We might need direct axios call if we don't store all properties in redux details
+import axios from 'axios'; 
 
 const PropertyDetails = () => {
     const { id } = useParams();
@@ -13,9 +13,6 @@ const PropertyDetails = () => {
     const dispatch = useDispatch();
     const user = useSelector((state) => state.user.user);
 
-    // In a real app we might fetch specific property details from backend, 
-    // but here we can try to find it in the list or fetch it if missing.
-    // For simplicity, let's look in the store first.
 
     const propertyFromStore = useSelector((state) =>
         state.properties.list.find((p) => p._id === id)
@@ -192,3 +189,4 @@ const PropertyDetails = () => {
 };
 
 export default PropertyDetails;
+
